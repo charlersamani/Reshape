@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+:root {
+    --primary-color: #44dfc4;
+    --white-color: #fff;
+    --dark-color: #596261;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)), url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 2.2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.logo span {
+    color: var(--primary-color);
+    font-weight: 800;
+    font-family: 'Great Vibes', cursive;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 1.3rem;
+    position: relative;
+}
+
+.navbar ul li a  {
+    color: var(--white-color);
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.navbar .navbar-nav .active> .nav-link,
+.navbar ul li a:hover {
+    color: var(--primary-color);
+}
+
+.getqoute {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-color: transparent;
+    padding: 0.5rem 1.5rem;
+     border-radius: 1.3rem;
+}
+
+.getqoute:hover {
+    color: var(--white-color) !important;
+    background-color: var(--dark-color);
+    border-color: var(--primary-color);
+}
+
+.info-section {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--white-color);
+    text-align: center;
+}
+
+.info-section h2 {
+    font-size: 4rem;
+    margin-top: 5rem;
+    text-transform: uppercase;
+}
+
+.info-section h2 span {
+    color: var(--primary-color);
+    font-family: 'Great Vibes', cursive;
+    text-transform: capitalize;
+}
+
+.info-section p {
+    margin: 1.3rem 0;
+    font-weight: 100;
+    line-height: 1.6rem;
+    font-size: 1.5rem;
+}
+
+.info-section p span {
+    font-weight: 500;
+    font-size: 1.7em;
+    color: var(--primary-color);
+}
+
+.btn {
+    width: 14rem;
+    padding: .9rem 0;
+    border-radius: 1.6rem;
+    background: transparent;
+    color: var(--white-color);
+    cursor: pointer;
+    border: .1rem solid var(--primary-color);
+    margin: 1.3rem 0.6rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn span {
+    width: 0%;
+    height: 100%;
+    border-radius: 1.6rem;
+    left: 0;
+    bottom: 0;
+    background-color: var(--primary-color);
+    position: absolute;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.btn:hover span {
+    width: 100%;
+}
+
+.btn:hover {
+    border: none;
+}
